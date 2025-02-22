@@ -1,0 +1,18 @@
+.active {
+	position: relative;
+	display: inline-block;
+	justify-content: center;
+}
+
+.active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	height: 1.5px;
+	background-color: #262628;
+	z-index: -1;
+	transform: scaleX(1.5);
+	transform-origin: center;
+}

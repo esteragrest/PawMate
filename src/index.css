@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.roboto {
+	font-family: 'Roboto', serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+}
+
+.russo-one-regular {
+	font-family: 'Russo One', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 :root {
 	--accent-color-hue: 236;
 	--accent-color-saturation: 100%;
@@ -6,12 +28,19 @@
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #fff9f5;
+	font-family: 'Roboto', serif;
+	color: #262628;
+	font-size: 16px;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+	color: #262628;
+	text-decoration: none;
 }
