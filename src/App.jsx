@@ -1,7 +1,4 @@
-import { Content } from './components';
-import { Header } from './components';
-
-const Footer = () => <div>Футер</div>;
+import { Content, Header, Footer } from './components';
 
 export const App = () => {
 	return (
