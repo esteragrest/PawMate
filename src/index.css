@@ -34,6 +34,7 @@ body {
 	font-family: 'Roboto', serif;
 	color: #262628;
 	font-size: 16px;
+	height: 100%;
 }
 
 code {
@@ -43,4 +44,17 @@ code {
 a {
 	color: #262628;
 	text-decoration: none;
+}
+
+hr {
+	height: 0;
+	border: none;
+	border-top: 1.5px solid #262628;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Russo One', serif;
 }

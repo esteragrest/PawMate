@@ -1,0 +1,252 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	gap: 20px;
+}
+
+.container h2 {
+	font-size: 36px;
+	text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.18);
+	padding-bottom: 24px;
+	max-width: 70%;
+}
+
+.container h4 {
+	font-size: 18px;
+}
+
+.reasons-text {
+	width: 60%;
+	height: 100%;
+	padding-left: 74px;
+	padding-bottom: 50px;
+}
+
+.reasons-text p {
+	padding-bottom: 10px;
+}
+
+.reasons-img {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 40%;
+	height: 100%;
+	border-radius: 90% 0 0 0;
+	background-color: #d6dc82;
+}
+
+.highlight {
+	color: #d96073;
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+	.container {
+		gap: 25px;
+	}
+
+	.container h2 {
+		max-width: 90%;
+	}
+
+	.reasons-img {
+		justify-content: center;
+		border-radius: 90% 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 1701px) {
+	.container {
+		gap: 30px;
+	}
+
+	.container h2 {
+		max-width: 90%;
+	}
+
+	.container h4 {
+		font-size: 22px;
+	}
+
+	.container p {
+		font-size: 18px;
+	}
+
+	.reasons-img {
+		border-radius: 90% 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	.container {
+		gap: 20px;
+	}
+
+	.container h2 {
+		max-width: 90%;
+	}
+
+	.reasons-text {
+		width: 50%;
+		height: 100%;
+		padding-left: 74px;
+	}
+
+	.reasons-text p {
+		padding-bottom: 8px;
+	}
+
+	.reasons-img {
+		align-items: end;
+		width: 50%;
+	}
+
+	.reasons-img img {
+		width: 90%;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.container {
+		gap: 15px;
+	}
+
+	.container h2 {
+		font-size: 28px;
+		max-width: 90%;
+	}
+
+	.container h4 {
+		font-size: 16px;
+	}
+
+	.reasons-text {
+		padding-left: 45px;
+	}
+
+	.reasons-text p {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+
+	.reasons-img {
+		height: 90%;
+	}
+
+	.reasons-img img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 621px) and (max-width: 767px) {
+	.container {
+		align-items: center;
+		padding-top: 5px;
+		gap: 10px;
+	}
+
+	.container h2 {
+		font-size: 26px;
+		padding-bottom: 20px;
+		max-width: 100%;
+	}
+
+	.container h4 {
+		font-size: 15px;
+	}
+
+	.reasons-text {
+		width: 55%;
+		padding-left: 24px;
+		padding-bottom: 20px;
+	}
+
+	.reasons-text p {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+
+	.reasons-img {
+		width: 45%;
+		height: 100%;
+		border-radius: 50% 0 50% 0;
+	}
+
+	.reasons-img img {
+		width: 90%;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 620px) {
+	.container {
+		align-items: center;
+		padding: 5px 24px 20px 24px;
+		gap: 10px;
+	}
+
+	.container h2 {
+		font-size: 26px;
+		padding-bottom: 20px;
+		max-width: 100%;
+	}
+
+	.container h4 {
+		font-size: 15px;
+	}
+
+	.reasons-text {
+		width: 100%;
+		padding-left: 0;
+		padding-bottom: 0;
+	}
+
+	.reasons-text p {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+
+	.reasons-img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.container {
+		align-items: center;
+		padding: 5px 24px 20px 24px;
+		gap: 10px;
+	}
+
+	.container h2 {
+		font-size: 22px;
+		padding-bottom: 20px;
+		max-width: 100%;
+	}
+
+	.container h4 {
+		font-size: 14px;
+	}
+
+	.reasons-text {
+		width: 100%;
+		padding-left: 0;
+		padding-bottom: 0;
+	}
+
+	.reasons-text p {
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+
+	.reasons-img {
+		display: none;
+	}
+}

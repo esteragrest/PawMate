@@ -1,9 +1,10 @@
+import { MainPage } from './components';
 import { Routes, Route } from 'react-router';
 
 export const Content = () => {
 	return (
 		<Routes>
-			<Route path="/" element={<div>Главная</div>} />
+			<Route path="/" element={<MainPage />} />
 			<Route path="/register" element={<div>Регистрация</div>} />
 			<Route path="/login" element={<div>Вход</div>} />
 			<Route path="/forum" element={<div>Обсуждение</div>} />
