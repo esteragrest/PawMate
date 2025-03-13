@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import styles from './header.module.css';
-import { Navbar } from './components/navbar/Navbar';
+import { Menu, Navbar, ProfileMenu } from './components';
 import { ControlPanel } from '../control-panel/ControlPanel';
-import { NavLink } from 'react-router';
 
 export const Header = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuOpen(!menuOpen);
+	};
+
 	return (
-		<header>
+		<header className={styles.header}>
 			<Navbar />
 			<ControlPanel />
-			<NavLink className={styles.login} to="/login">
-				Вход <img src="/src/assets/images/login.png" alt="login" />
-			</NavLink>
+			<ProfileMenu toggleMenu={toggleMenu} />
+			{menuOpen && <Menu toggleMenu={toggleMenu} />}
 		</header>
 	);
 };

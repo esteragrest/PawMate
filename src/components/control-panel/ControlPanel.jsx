@@ -1,4 +1,4 @@
-import { ExtendedLink } from './componets';
+import { ExtendedLink } from '../extended-link/ExtendedLink';
 import styles from './control-panel.module.css';
 
 export const ControlPanel = () => (

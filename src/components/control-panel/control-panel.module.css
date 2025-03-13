@@ -6,3 +6,38 @@
 	gap: 74px;
 }
 
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+	.control-panel{
+		gap: 86px;
+	}
+}
+
+@media only screen and (min-width: 1701px) {
+	.control-panel{
+		gap: 100px;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	.control-panel{
+		gap: 64px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.control-panel{
+		gap: 54px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.control-panel{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.control-panel{
+		display: none;
+	}
+}

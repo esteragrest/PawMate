@@ -1,12 +1,12 @@
-import { MainPage } from './components';
+import { Authorization, MainPage, Registration } from './components';
 import { Routes, Route } from 'react-router';
 
 export const Content = () => {
 	return (
 		<Routes>
 			<Route path="/" element={<MainPage />} />
-			<Route path="/register" element={<div>Регистрация</div>} />
-			<Route path="/login" element={<div>Вход</div>} />
+			<Route path="/auth/register" element={<Registration />} />
+			<Route path="/auth/login" element={<Authorization />} />
 			<Route path="/forum" element={<div>Обсуждение</div>} />
 			<Route path="/forum/:postId" element={<div>Одно обсуждение</div>} />
 			<Route path="/articles" element={<div>Статьи</div>} />

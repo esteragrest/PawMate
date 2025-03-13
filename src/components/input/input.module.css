@@ -1,0 +1,72 @@
+.input {
+	width: 100%;
+	padding: 10px 8px;
+	border: none;
+	border-bottom: 1.4px solid #262628;
+	background-color: transparent;
+	margin-bottom: 30px;
+}
+
+.input:hover {
+	border-bottom: 1.4px solid #d6dc82;
+}
+
+.input:focus {
+	border: none;
+	border-bottom: 1.4px solid #d6dc82;
+	outline: none;
+}
+
+.error {
+	border-bottom: 1.4px solid #d96073;
+}
+
+@media only screen and (min-width: 1700px) {
+	.input {
+		padding: 14px 10px;
+		border-bottom: 1.8px solid #262628;
+		margin-bottom: 35px;
+		font-size: 18px;
+	}
+
+	.input::placeholder {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.input {
+		padding: 8px 6px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.input::placeholder {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.input {
+		padding: 8px 6px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.input::placeholder {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.input {
+		width: 100%;
+		padding: 8px 6px;
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.input::placeholder {
+		font-size: 12px;
+	}
+}

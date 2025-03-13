@@ -5,7 +5,7 @@ export const App = () => {
 	const location = useLocation();
 
 	const showHeaderFooter =
-		location.pathname !== '/register' && location.pathname !== '/login';
+		location.pathname !== '/auth/register' && location.pathname !== '/auth/login';
 
 	return (
 		<>

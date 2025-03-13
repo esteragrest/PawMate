@@ -20,7 +20,7 @@ export const Banner = () => {
 					ярче и счастливее!
 				</p>
 
-				<GreenButton to="/register">Присоединиться</GreenButton>
+				<GreenButton to="/auth/register">Присоединиться</GreenButton>
 			</div>
 		</div>
 	);

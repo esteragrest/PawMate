@@ -21,3 +21,71 @@
 	width: 18px;
 	height: auto;
 }
+
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+	.navbar {
+		gap: 10px;
+	}
+
+	.navigate {
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	.navigate img {
+		width: 22px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 1701px) {
+	.navbar {
+		gap: 12px;
+	}
+
+	.navigate {
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	.navigate img {
+		width: 25px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.navbar {
+		gap: 4px;
+	}
+
+	.navigate img {
+		width: 18px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.navbar {
+		gap: 2px;
+	}
+
+	.navigate img {
+		width: 14px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.navbar {
+		gap: 2px;
+	}
+
+	.navigate img {
+		width: 14px;
+		height: auto;
+	}
+}

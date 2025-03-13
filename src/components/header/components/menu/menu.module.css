@@ -1,0 +1,31 @@
+.menu {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	position: fixed;
+	background-color: #ffeede;
+	font-size: 12px;
+}
+
+.cross {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: auto;
+}
+
+.links {
+	gap: 7px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	margin: 4rem auto;
+}

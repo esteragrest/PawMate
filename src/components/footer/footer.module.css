@@ -8,7 +8,6 @@ footer {
 	height: 60px;
 	padding: 0 90px;
 	text-align: center;
-	
 }
 
 .control-panel {
@@ -20,4 +19,67 @@ footer {
 .control-panel img {
 	width: 50px;
 	height: auto;
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+	footer {
+		height: 70px;
+	}
+
+	.control-panel {
+		gap: 35px;
+	}
+}
+
+@media only screen and (min-width: 1701px) {
+	footer {
+		height: 80px;
+		font-size: 18px;
+	}
+
+	.control-panel {
+		gap: 45px;
+	}
+
+	.control-panel img {
+		width: 55px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	footer {
+		padding: 0 50px;
+	}
+
+	.control-panel {
+		gap: 20px;
+	}
+
+	.control-panel img {
+		width: 45px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	footer {
+		padding: 0 45px;
+		font-size: 14px;
+	}
+
+	.control-panel img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	footer {
+		padding: 0 20px;
+		font-size: 12px;
+	}
+
+	.control-panel img {
+		display: none;
+	}
 }

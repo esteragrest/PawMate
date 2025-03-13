@@ -2,3 +2,33 @@
 	width: 45px;
 	height: auto;
 }
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+	.logo {
+		width: 55px;
+	}
+}
+
+@media only screen and (min-width: 1701px) {
+	.logo {
+		width: 60px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.logo {
+		width: 40px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.logo {
+		width: 35px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.logo {
+		width: 32px;
+	}
+}

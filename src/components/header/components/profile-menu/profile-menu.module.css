@@ -1,12 +1,7 @@
-.header {
+.profile-menu {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	height: 60px;
-	padding: 0 90px;
-	top: 0;
-	left: 0;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .login {
@@ -30,45 +25,19 @@
 }
 
 .burgerLine {
-	width: 25px;
-	height: 3px;
+	width: 22px;
+	height: 2.5px;
 	background-color: #333;
 	margin: 4px 0;
 }
 
-.menu {
-	width: 50%;
-	height: 100%;
-	right: 0;
-	top: 0;
-	z-index: 1;
-	position: fixed;
-	background-color: #b95060;
-}
-
 @media only screen and (min-width: 1701px) {
-	.header {
-		height: 80px;
-		font-size: 18px;
-	}
-
 	.login {
 		font-size: 20px;
 	}
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1700px) {
-	.header {
-		height: 70px;
-	}
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.header {
-		padding: 0 45px;
-		font-size: 14px;
-	}
-
 	.login {
 		padding: 5px 14px;
 		gap: 7px;
@@ -76,11 +45,6 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-	.header {
-		padding: 0 35px;
-		font-size: 14px;
-	}
-
 	.login {
 		padding: 5px 12px;
 		gap: 7px;
@@ -92,14 +56,14 @@
 }
 
 @media only screen and (max-width: 480px) {
-	.header {
-		padding: 0 20px;
-		font-size: 14px;
+	.login {
+		font-size: 12px;
+		padding: 3px 10px;
+		gap: 7px;
 	}
 
-	.login {
-		padding: 5px 12px;
-		gap: 7px;
+	.login img {
+		width: 10px;
 	}
 
 	.burgerMenu {
