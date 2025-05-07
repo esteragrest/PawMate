@@ -1,4 +1,4 @@
-import { Articles, Authorization, MainPage, Registration } from './components';
+import { Article, Articles, Authorization, MainPage, Registration } from './components';
 import { Routes, Route } from 'react-router';
 
 export const Content = () => {
@@ -10,7 +10,7 @@ export const Content = () => {
 			<Route path="/forum" element={<div>Обсуждение</div>} />
 			<Route path="/forum/:postId" element={<div>Одно обсуждение</div>} />
 			<Route path="/articles" element={<Articles />} />
-			<Route path="/articles/:articleId" element={<div>Одна статья</div>} />
+			<Route path="/articles/:articleId" element={<Article />} />
 			<Route path="/services" element={<div>Улсуги</div>} />
 			<Route path="/services/:serviceId" element={<div>Одна услуга</div>} />
 			<Route path="/newservice" element={<div>Добавление услуги</div>} />
