@@ -4,12 +4,6 @@
 	border-radius: 20px;
 }
 
-@media only screen and (min-width: 1500px) {
-	.green {
-		font-size: 20px;
-	}
-}
-
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 	.green {
 		padding: 8px 18px;
