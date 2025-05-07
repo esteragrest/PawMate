@@ -1,4 +1,11 @@
-import { Article, Articles, Authorization, MainPage, Registration } from './components';
+import {
+	Article,
+	Articles,
+	Authorization,
+	ForumContent,
+	MainPage,
+	Registration,
+} from './components';
 import { Routes, Route } from 'react-router';
 
 export const Content = () => {
@@ -7,7 +14,7 @@ export const Content = () => {
 			<Route path="/" element={<MainPage />} />
 			<Route path="/auth/register" element={<Registration />} />
 			<Route path="/auth/login" element={<Authorization />} />
-			<Route path="/forum" element={<div>Обсуждение</div>} />
+			<Route path="/forum" element={<ForumContent />} />
 			<Route path="/forum/:postId" element={<div>Одно обсуждение</div>} />
 			<Route path="/articles" element={<Articles />} />
 			<Route path="/articles/:articleId" element={<Article />} />

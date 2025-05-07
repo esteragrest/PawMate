@@ -1,0 +1,101 @@
+.forum-content-container {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	padding: 30px 40px;
+}
+
+.forum-content {
+	width: 70%;
+	height: auto;
+}
+
+.forum-post-form {
+	display: flex;
+	margin-top: 70px;
+	width: 30%;
+	height: auto;
+}
+
+@media only screen and (min-width: 1700px) {
+	.forum-content {
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.forum-content-container {
+		padding: 20px 30px;
+	}
+
+	.forum-content {
+		width: 75%;
+	}
+
+	.forum-post-form {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 621px) and (max-width: 767px) {
+	.forum-content-container {
+		padding: 20px 30px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.forum-content {
+		width: 100%;
+	}
+
+	.forum-post-form {
+		width: 40%;
+		height: 30%;
+		margin-top: 15px;
+		padding-bottom: 30px;
+		order: -1;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 620px) {
+	.forum-content-container {
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.forum-content {
+		width: 100%;
+	}
+
+	.forum-post-form {
+		width: 50%;
+		height: 40%;
+		margin-top: 15px;
+		padding-bottom: 30px;
+		order: -1;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.forum-content-container {
+		padding: 15px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.forum-content {
+		width: 100%;
+	}
+
+	.forum-post-form {
+		width: 80%;
+		height: 40%;
+		margin-top: 5px;
+		padding-bottom: 20px;
+		order: -1;
+	}
+}

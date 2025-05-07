@@ -1,0 +1,32 @@
+.forum-post-img {
+	width: 60%;
+	height: auto;
+}
+
+.title {
+	text-align: center
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.forum-post-img {
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 621px) and (max-width: 767px) {
+	.forum-post-img {
+		width: 55%;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 620px) {
+	.forum-post-img {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.forum-post-img {
+		width: 50%;
+	}
+}
