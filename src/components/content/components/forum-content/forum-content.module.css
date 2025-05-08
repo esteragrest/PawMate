@@ -4,13 +4,13 @@
 	align-items: start;
 	flex-direction: row;
 	width: 100%;
-	height: 100%;
+	height: 90vh;
 	padding: 30px 40px;
 }
 
 .forum-content {
 	width: 70%;
-	height: auto;
+	height: 100%;
 }
 
 .forum-post-form {
@@ -33,6 +33,7 @@
 
 	.forum-content {
 		width: 75%;
+		height: 100%;
 	}
 
 	.forum-post-form {
@@ -45,10 +46,12 @@
 		padding: 20px 30px;
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	.forum-content {
 		width: 100%;
+		height: 100%;
 	}
 
 	.forum-post-form {
@@ -65,10 +68,12 @@
 		padding: 20px;
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	.forum-content {
 		width: 100%;
+		height: 100%;
 	}
 
 	.forum-post-form {
@@ -85,10 +90,12 @@
 		padding: 15px;
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	.forum-content {
 		width: 100%;
+		height: 100%;
 	}
 
 	.forum-post-form {

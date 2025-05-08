@@ -1,0 +1,16 @@
+.comment-item-container {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	background-color: #ffeede;
+	width: 100%;
+	height: auto;
+	padding: 10px 16px;
+}
+
+@media only screen and (max-width: 767px) {
+	.comment-item-container {
+		padding: 6px 10px;
+	}
+}

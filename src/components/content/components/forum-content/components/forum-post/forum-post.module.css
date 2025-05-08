@@ -1,0 +1,14 @@
+.forum-post-container {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	width: 100%;
+	min-height: 90vh;
+}
+
+@media (max-width: 767px) {
+    .forum-post-container {
+        min-height: auto;
+    }
+}

@@ -1,0 +1,32 @@
+.author-details-container {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	gap: 7px;
+	padding: 10px 0;
+}
+
+.profile-picture {
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+	border: 1px solid #00000080;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+	.profile-picture {
+		width: 30px;
+		height: 30px;
+	}
+}

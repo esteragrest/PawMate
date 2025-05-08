@@ -1,0 +1,23 @@
+.forum-post-content-container {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	width: 90%;
+	height: auto;
+	padding: 15px 0;
+}
+
+.forum-post-content-container h3 {
+	font-size: 26px;
+}
+
+@media only screen and (max-width: 767px) {
+	.forum-post-content-container {
+		width: 100%;
+	}
+
+	.forum-post-content-container h3 {
+		font-size: 22px;
+	}
+}

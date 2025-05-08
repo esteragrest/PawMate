@@ -1,0 +1,16 @@
+.control-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.control-button {
+	width: 30px;
+	height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+	.control-button {
+		width: 25px;
+	}
+}

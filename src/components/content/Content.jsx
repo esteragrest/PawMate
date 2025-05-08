@@ -15,7 +15,7 @@ export const Content = () => {
 			<Route path="/auth/register" element={<Registration />} />
 			<Route path="/auth/login" element={<Authorization />} />
 			<Route path="/forum" element={<ForumContent />} />
-			<Route path="/forum/:postId" element={<div>Одно обсуждение</div>} />
+			<Route path="/forum/:postId" element={<ForumContent />} />
 			<Route path="/articles" element={<Articles />} />
 			<Route path="/articles/:articleId" element={<Article />} />
 			<Route path="/services" element={<div>Улсуги</div>} />
