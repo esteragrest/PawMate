@@ -1,9 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { thunk } from 'redux-thunk';
-import { forumPostReducer } from './reducers/forum-post-reducer';
+import { forumPostReducer, serviceReducer } from './reducers';
 
 const reducer = combineReducers({
 	forumPost: forumPostReducer,
+	service: serviceReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

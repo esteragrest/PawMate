@@ -1,0 +1,21 @@
+.service-container {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 90vh;
+	padding: 30px 60px;
+}
+
+@media (max-width: 1024px) {
+	.service-container {
+		padding: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.service-container {
+		padding: 15px;
+	}
+}

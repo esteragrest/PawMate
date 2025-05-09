@@ -4,4 +4,4 @@ export * from './registration/Registration';
 export * from './articles/Articles';
 export * from './article/Article';
 export * from './forum-content/ForumContent';
-export * from './services/Services';
+export * from './services-content/ServicesContent';

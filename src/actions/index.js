@@ -1,3 +1,5 @@
 export * from './action-type';
 export * from './set-forum-post-data/';
 export * from './reset-forum-post-data';
+export * from './set-service-data';
+export * from './reset-service-data';

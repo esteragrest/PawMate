@@ -5,7 +5,7 @@ import {
 	ForumContent,
 	MainPage,
 	Registration,
-	Services,
+	ServicesContent,
 } from './components';
 import { Routes, Route } from 'react-router';
 
@@ -19,8 +19,8 @@ export const Content = () => {
 			<Route path="/forum/:postId" element={<ForumContent />} />
 			<Route path="/articles" element={<Articles />} />
 			<Route path="/articles/:articleId" element={<Article />} />
-			<Route path="/services" element={<Services />} />
-			<Route path="/services/:serviceId" element={<div>Одна услуга</div>} />
+			<Route path="/services" element={<ServicesContent />} />
+			<Route path="/services/:serviceId" element={<ServicesContent />} />
 			<Route path="/newservice" element={<div>Добавление услуги</div>} />
 			<Route path="/editservice" element={<div>Редактирование услуги</div>} />
 			<Route path="/profile" element={<div>Профиль</div>} />
