@@ -1,0 +1,17 @@
+.services-container {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	width: 100%;
+	min-height: 90vh;
+	background-image: url(/public//img/bg-services.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+@media (max-width: 768px) {
+	.services-container {
+		background: none;
+	}
+}
