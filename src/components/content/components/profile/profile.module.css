@@ -1,0 +1,39 @@
+.profile-container {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 90vh;
+	padding: 30px 60px;
+}
+
+.profile-container hr {
+	margin-top: 20px;
+	width: 80%;
+	height: 2px;
+}
+
+@media (max-width: 1024px) {
+	.profile-container hr {
+		width: 90%;
+	}
+}
+
+@media (max-width: 818px) {
+	.profile-container hr {
+		width: 100%;
+	}
+}
+
+@media (max-width: 742px) {
+	.profile-container {
+		padding: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.profile-container {
+		padding: 30px 20px;
+	}
+}

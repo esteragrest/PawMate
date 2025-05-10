@@ -5,3 +5,4 @@ export * from './articles/Articles';
 export * from './article/Article';
 export * from './forum-content/ForumContent';
 export * from './services-content/ServicesContent';
+export * from './profile/Profile';

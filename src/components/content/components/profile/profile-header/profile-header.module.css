@@ -1,0 +1,113 @@
+.profile-header {
+	width: 80%;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.profile-info {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.profile-info h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.user-photo {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.control-panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 10px;
+	padding: 8px 0;
+}
+
+@media (max-width: 1024px) {
+	.profile-header {
+		width: 90%;
+		gap: 10px;
+	}
+
+	.user-photo {
+		width: 140px;
+		height: 140px;
+	}
+}
+
+@media (max-width: 818px) {
+	.profile-header {
+		align-items: center;
+		width: 100%;
+		gap: 10px;
+	}
+
+	.profile-info {
+		gap: 3px;
+	}
+
+	.user-photo {
+		width: 140px;
+		height: 140px;
+	}
+
+	.control-panel {
+		gap: 8px;
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 742px) {
+	.profile-header {
+		align-items: start;
+		width: 100%;
+		gap: 6px;
+	}
+
+	.profile-info {
+		gap: 3px;
+	}
+
+	.user-photo {
+		width: 120px;
+		height: 120px;
+	}
+
+	.control-panel {
+		align-items: start;
+		gap: 4px;
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.control-panel {
+		flex-direction: column;
+		align-items: start;
+		gap: 4px;
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 350px) {
+	.user-photo {
+		width: 100px;
+		height: 100px;
+	}
+}

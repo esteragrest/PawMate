@@ -1,6 +1,6 @@
+import { Link } from 'react-router';
 import PropTypes from 'prop-types';
 import styles from './contorl-button.module.css';
-import { Link } from 'react-router';
 
 export const ControlButton = ({ img, ...props }) => {
 	return (
