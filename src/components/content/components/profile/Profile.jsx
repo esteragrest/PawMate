@@ -6,22 +6,24 @@ import { ProfileHeader } from './profile-header/ProfileHeader';
 
 export const Profile = () => {
 	const [userData, setUserData] = useState({});
-	const [pets, setPets] = useState([]);
-	const [services, setServices] = useState({});
-	const [forumPosts, setForumPosts] = useState({});
+	const [userPets, setUserPets] = useState([]);
+	const [userServices, setUserServices] = useState([]);
+	const [userForumPosts, setUserForumPosts] = useState([]);
 
 	useEffect(() => {
 		setUserData(USER_INFO);
-		setPets(USER_INFO.pets);
-		setServices(USER_INFO.services);
-		setForumPosts(USER_INFO.forumPosts);
+		setUserPets(USER_INFO.pets);
+		setUserServices(USER_INFO.services);
+		setUserForumPosts(USER_INFO.forumPosts);
 	}, []);
 
 	return (
 		<div className={styles['profile-container']}>
 			<ProfileHeader userData={userData} />
 			<hr />
-			<Outlet />
+			<div className={styles['profile-options']}>
+				<Outlet context={{ userPets, userForumPosts, userServices }} />
+			</div>
 		</div>
 	);
 };

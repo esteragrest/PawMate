@@ -1,7 +1,6 @@
 import { ListWrapper } from '../../../../../list-wrapper/ListWrapper';
 import { MediaPostCard } from '../../../../../media-post-card/MediaPostCard';
 import PropTypes from 'prop-types';
-// import styles from './forum-posts.module.css'
 
 export const ForumPosts = ({ forumPosts }) => {
 	return (

@@ -5,13 +5,17 @@
 	flex-direction: column;
 	width: 100%;
 	min-height: 90vh;
-	padding: 30px 60px;
+	padding: 30px 40px;
 }
 
 .profile-container hr {
 	margin-top: 20px;
 	width: 80%;
 	height: 2px;
+}
+
+.profile-options {
+	width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -34,6 +38,10 @@
 
 @media (max-width: 650px) {
 	.profile-container {
-		padding: 30px 20px;
+		padding: 30px 0px;
+	}
+
+	.profile-container hr {
+		width: 90%;
 	}
 }

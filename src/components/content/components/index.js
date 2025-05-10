@@ -6,3 +6,5 @@ export * from './article/Article';
 export * from './forum-content/ForumContent';
 export * from './services-content/ServicesContent';
 export * from './profile/Profile';
+export * from './user-services/UserServices';
+export * from './user-forum-posts/UserForumPosts';
