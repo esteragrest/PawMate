@@ -4,7 +4,7 @@ import styles from './services-list.module.css';
 
 export const ServicesList = ({ services }) => {
 	return (
-		<div className={styles.servicesList}>
+		<div className={styles['services-list']}>
 			{services.length === 0 ? (
 				<h3>Здесь еще нет ни одного объявления :(</h3>
 			) : (

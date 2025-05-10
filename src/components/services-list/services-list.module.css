@@ -1,4 +1,4 @@
-.servicesList {
+.services-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 20px;
@@ -8,13 +8,13 @@
 }
 
 @media (max-width: 1024px) {
-	.servicesList {
+	.services-list {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (max-width: 768px) {
-	.servicesList {
+	.services-list {
 		grid-template-columns: 1fr;
 		padding: 30px 10px;
 	}
