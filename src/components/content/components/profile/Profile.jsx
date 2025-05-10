@@ -1,8 +1,9 @@
 import { Outlet } from 'react-router';
-import styles from './profile.module.css';
 import { useEffect, useState } from 'react';
 import { USER_INFO } from '../../user-info';
 import { ProfileHeader } from './profile-header/ProfileHeader';
+import { ProfileNavigation } from './profile-navigation/ProfileNavigation';
+import styles from './profile.module.css';
 
 export const Profile = () => {
 	const [userData, setUserData] = useState({});
@@ -21,6 +22,7 @@ export const Profile = () => {
 		<div className={styles['profile-container']}>
 			<ProfileHeader userData={userData} />
 			<hr />
+			<ProfileNavigation />
 			<div className={styles['profile-options']}>
 				<Outlet context={{ userPets, userForumPosts, userServices }} />
 			</div>
