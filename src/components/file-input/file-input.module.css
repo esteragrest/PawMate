@@ -1,0 +1,81 @@
+.file-input-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.file-input-container label {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+.file-input-container img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.file-input-container input[type='file'] {
+	display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+	.file-input-container label {
+		width: 120px;
+		height: 120px;
+	}
+
+	.file-input-container {
+		width: 120px;
+		height: 120px;
+	}
+
+	.file-input-container img {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.file-input-container label {
+		width: 110px;
+		height: 110px;
+	}
+
+	.file-input-container {
+		width: 110px;
+		height: 110px;
+	}
+
+	.file-input-container img {
+		width: 110px;
+		height: 110px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.file-input-container label {
+		width: 90px;
+		height: 90px;
+	}
+
+	.file-input-container {
+		width: 90px;
+		height: 90px;
+	}
+
+	.file-input-container img {
+		width: 90px;
+		height: 90px;
+	}
+}

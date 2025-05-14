@@ -11,7 +11,10 @@ export const ProfileHeader = ({
 			<div className={styles['profile-info']}>
 				<h3>
 					{firstName} {lastName || []}
-					<ControlButton img="/public/img/settings-svgrepo-com.svg" />
+					<ControlButton
+						to="/editprofile"
+						img="/public/img/settings-svgrepo-com.svg"
+					/>
 				</h3>
 				<p>{email}</p>
 				<p>{phone}</p>

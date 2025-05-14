@@ -10,6 +10,7 @@ import {
 	UserServices,
 	UserForumPosts,
 	UserPets,
+	ProfileEdit,
 } from './components';
 import { Routes, Route } from 'react-router';
 
@@ -32,7 +33,7 @@ export const Content = () => {
 				<Route path="forum" element={<UserForumPosts />} />
 				<Route path="services" element={<UserServices />} />
 			</Route>
-			<Route path="/editprofile" element={<div>Редактирование профиля</div>} />
+			<Route path="/editprofile" element={<ProfileEdit />} />
 			<Route path="/newpet" element={<div>Добавление питомца</div>} />
 			<Route path="*" element={<div>Ошибка 404</div>} />
 		</Routes>

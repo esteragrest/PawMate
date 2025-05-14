@@ -9,3 +9,4 @@ export * from './profile/Profile';
 export * from './user-services/UserServices';
 export * from './user-forum-posts/UserForumPosts';
 export * from './user-pets/UserPets';
+export * from './profile-edit/ProfileEdit';
