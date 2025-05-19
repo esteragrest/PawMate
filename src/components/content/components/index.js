@@ -10,3 +10,4 @@ export * from './user-services/UserServices';
 export * from './user-forum-posts/UserForumPosts';
 export * from './user-pets/UserPets';
 export * from './profile-edit/ProfileEdit';
+export * from './create-pet/CreatePet';

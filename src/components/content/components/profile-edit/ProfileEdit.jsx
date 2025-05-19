@@ -2,7 +2,7 @@ import { Input } from '../../../input/Input';
 import { GreenButton } from '../button';
 import { FormBanner } from '../../../form-banner/FormBanner';
 import { Form } from '../../../form/Form';
-import { FileInput } from '../../../file-input/FileInput'
+import { FileInput } from '../../../file-input/FileInput';
 import styles from './profile-edit.module.css';
 
 export const ProfileEdit = () => {
@@ -27,7 +27,7 @@ export const ProfileEdit = () => {
 				backgroundColor="#D6DC82"
 				imageSrc="/public/img/profile-edit.png"
 				justifyContent="end"
-				backgroundImage="/public/img/bg-profile-edit.png"
+				backgroundImage="/public/img/bg-profile-editt.png"
 			/>
 		</div>
 	);
