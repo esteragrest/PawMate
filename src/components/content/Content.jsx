@@ -12,6 +12,7 @@ import {
 	UserPets,
 	ProfileEdit,
 	CreatePet,
+	CreateService,
 } from './components';
 import { Routes, Route } from 'react-router';
 
@@ -27,8 +28,8 @@ export const Content = () => {
 			<Route path="/articles/:articleId" element={<Article />} />
 			<Route path="/services" element={<ServicesContent />} />
 			<Route path="/services/:serviceId" element={<ServicesContent />} />
-			<Route path="/newservice" element={<div>Добавление услуги</div>} />
-			<Route path="/editservice" element={<div>Редактирование услуги</div>} />
+			<Route path="/newservice" element={<CreateService />} />
+			<Route path="/editservice" element={<CreateService />} />
 			<Route path="/profile/*" element={<Profile />}>
 				<Route path="pets" element={<UserPets />} />
 				<Route path="forum" element={<UserForumPosts />} />

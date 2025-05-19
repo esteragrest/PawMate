@@ -1,0 +1,155 @@
+.create-service-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.create-service-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: auto;
+	padding: 20px;
+	background: #fff6ef;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.create-service-form h3 {
+	font-size: 28px;
+}
+
+.bg-create-service-left,
+.bg-create-service-right,
+.bg-create-service {
+	background-image: url(/img/edit-dog-1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 30%;
+	height: 100vh;
+	display: flex;
+}
+
+.bg-create-service-left {
+	background-image: url(/img/edit-dog-1.png);
+}
+
+.bg-create-service-right {
+	background-image: url(/img/edit-dog-2.png);
+}
+
+.bg-create-service {
+	display: none;
+	background-image: url(/public/img/edit-dog-3.png);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.create-service-container {
+		height: auto;
+	}
+
+	.create-service-form {
+		width: 45%;
+		padding: 15px 10px;
+	}
+
+	.create-service-form h3 {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+	.create-service-container {
+		min-height: 95vh;
+		align-items: center;
+		padding: 20px 0 0 0;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.create-service-form {
+		width: 90%;
+	}
+
+	.create-service-form h3 {
+		font-size: 20px;
+	}
+
+	.bg-create-service-left,
+	.bg-create-service-right {
+		display: none;
+	}
+
+	.bg-create-service {
+		display: flex;
+		width: 50%;
+		height: 600px;
+		background-position: bottom;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 621px) {
+	.create-service-container {
+		min-height: 95vh;
+		align-items: center;
+		padding: 20px 0 0 0;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.create-service-form {
+		width: 90%;
+	}
+
+	.create-service-form h3 {
+		font-size: 18px;
+	}
+
+	.bg-create-service-left,
+	.bg-create-service-right {
+		display: none;
+	}
+
+	.bg-create-service {
+		display: flex;
+		width: 50%;
+		height: 500px;
+		background-position: bottom;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.create-service-container {
+		min-height: 75vh;
+		align-items: center;
+		padding: 20px 0 0 0;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.create-service-form {
+		width: 90%;
+	}
+
+	.create-service-form h3 {
+		font-size: 16px;
+	}
+
+	.bg-create-service-left,
+	.bg-create-service-right {
+		display: none;
+	}
+
+	.bg-create-service {
+		display: flex;
+		width: 60%;
+		height: 400px;
+		background-position: bottom;
+	}
+}
