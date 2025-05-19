@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import styles from './navbar.module.css';
 import { Logo } from '../../../logo/Logo';
 

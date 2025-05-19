@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import styles from './pink-button.module.css';
 
 export const PinkButton = ({ to, children }) => {

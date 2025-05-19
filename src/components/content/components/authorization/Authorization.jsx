@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import { Input } from '../../../input/Input';
 import { Logo } from '../../../logo/Logo';
 import { GreenButton } from '../button';

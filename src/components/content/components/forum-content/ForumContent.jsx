@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { FORUM_POSTS } from './forum-posts-data';
 import { ForumPost, ForumPostForm, ForumPosts } from './components';
 import styles from './forum-content.module.css';
-import { useMatch } from 'react-router';
+import { useMatch } from 'react-router-dom';
 
 export const ForumContent = () => {
 	const [forumPosts, setForumPosts] = useState([]);

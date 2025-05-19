@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router';
+import { useOutletContext } from 'react-router-dom';
 import { ServicesList } from '../../../services-list/ServicesList';
 
 export const UserServices = () => {

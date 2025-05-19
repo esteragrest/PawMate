@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router';
+import { useOutletContext } from 'react-router-dom';
 import { ListWrapper } from '../../../list-wrapper/ListWrapper';
 import { MediaPostCard } from '../../../media-post-card/MediaPostCard';
 import styles from './user-forum-posts.module.css';

@@ -11,10 +11,10 @@ import {
 	UserForumPosts,
 	UserPets,
 	ProfileEdit,
-	CreatePet,
+	PetForm,
 	CreateService,
 } from './components';
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 
 export const Content = () => {
 	return (
@@ -36,7 +36,8 @@ export const Content = () => {
 				<Route path="services" element={<UserServices />} />
 			</Route>
 			<Route path="/editprofile" element={<ProfileEdit />} />
-			<Route path="/newpet" element={<CreatePet />} />
+			<Route path="/newpet" element={<PetForm />} />
+			<Route path="/editpet" element={<PetForm />} />
 			<Route path="*" element={<div>Ошибка 404</div>} />
 		</Routes>
 	);

@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router';
+import { useOutletContext } from 'react-router-dom';
 import styles from './user-pets.module.css';
 import { PetCard } from './pet-card/PetCard';
 
