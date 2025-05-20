@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import styles from './pet-card.module.css';
 import { PinkButton } from '../../button';
+import { Link } from 'react-router-dom';
 
-export const PetCard = ({ pet: { photo, name, type, weight, age, description } }) => {
+export const PetCard = ({ pet: { id, photo, name, type, weight, age, description } }) => {
 	return (
 		<div className={styles['pet-card']}>
 			<div></div>
@@ -12,7 +13,9 @@ export const PetCard = ({ pet: { photo, name, type, weight, age, description } }
 			<p>{age} лет</p>
 			<p>{weight} кг</p>
 			<p>{description}</p>
-			<PinkButton>Редактировать</PinkButton>
+			<PinkButton>
+				<Link to={`/editpet/${id}`}>Редактировать</Link>
+			</PinkButton>
 		</div>
 	);
 };

@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
 import styles from './pink-button.module.css';
 
-export const PinkButton = ({ to, children }) => {
+export const PinkButton = ({ children, ...props }) => {
 	return (
-		<NavLink className={styles.pink} to={to}>
+		<button className={styles.pink} {...props}>
 			{children}
-		</NavLink>
+		</button>
 	);
 };
 
 PinkButton.propTypes = {
-	to: PropTypes.string,
 	children: PropTypes.string,
 };

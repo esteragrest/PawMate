@@ -1,6 +1,7 @@
 import { GreenButton } from '../../content/components/button';
 import PropTypes from 'prop-types';
 import styles from './service-card.module.css';
+import { Link } from 'react-router-dom';
 
 export const ServiceCard = ({
 	service: {
@@ -22,7 +23,9 @@ export const ServiceCard = ({
 				</p>
 				<p>{description}</p>
 				<div className={styles['details-button']}>
-					<GreenButton to={`/services/${id}`}>Связаться</GreenButton>
+					<GreenButton>
+						<Link to={`/services/${id}`}>Связаться</Link>
+					</GreenButton>
 				</div>
 			</div>
 		</div>

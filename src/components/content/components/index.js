@@ -11,4 +11,4 @@ export * from './user-forum-posts/UserForumPosts';
 export * from './user-pets/UserPets';
 export * from './profile-edit/ProfileEdit';
 export * from './pet-form/PetForm';
-export * from './create-service/CreateService';
+export * from './service-form/ServiceForm';

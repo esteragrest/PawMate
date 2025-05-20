@@ -12,7 +12,7 @@ import {
 	UserPets,
 	ProfileEdit,
 	PetForm,
-	CreateService,
+	ServiceForm,
 } from './components';
 import { Routes, Route } from 'react-router-dom';
 
@@ -28,8 +28,8 @@ export const Content = () => {
 			<Route path="/articles/:articleId" element={<Article />} />
 			<Route path="/services" element={<ServicesContent />} />
 			<Route path="/services/:serviceId" element={<ServicesContent />} />
-			<Route path="/newservice" element={<CreateService />} />
-			<Route path="/editservice" element={<CreateService />} />
+			<Route path="/newservice" element={<ServiceForm />} />
+			<Route path="/editservice" element={<ServiceForm />} />
 			<Route path="/profile/*" element={<Profile />}>
 				<Route path="pets" element={<UserPets />} />
 				<Route path="forum" element={<UserForumPosts />} />

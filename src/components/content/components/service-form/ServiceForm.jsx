@@ -3,9 +3,13 @@ import { FileInput } from '../../../file-input/FileInput';
 import { Form } from '../../../form/Form';
 import { Input } from '../../../input/Input';
 import { GreenButton } from '../button';
-import styles from './create-service.module.css';
+import { useState } from 'react';
+import { AddressPicker } from './address-picker/AddressPicker';
+import styles from './service-form.module.css';
 
-export const CreateService = () => {
+export const ServiceForm = () => {
+	const [showModal, setShowModal] = useState(false);
+	const [mainAddress, setMainAddress] = useState('');
 	const isEditing = !!useMatch('/editservice');
 
 	return (
@@ -47,13 +51,23 @@ export const CreateService = () => {
 						type="text"
 						name="setvice_address"
 						id="setvice_address"
+						value={mainAddress}
 						placeholder="Укажите адрес"
+						onClick={() => setShowModal(!showModal)}
+						onChange={(e) => setMainAddress(e.target.value)}
 					/>
+
 					<GreenButton>Опубликовать</GreenButton>
 				</Form>
 			</div>
 			<div className={styles['bg-create-service-right']}></div>
 			<div className={styles['bg-create-service']}></div>
+
+			<AddressPicker
+				showModal={showModal}
+				setShowModal={setShowModal}
+				setMainAddress={setMainAddress}
+			/>
 		</div>
 	);
 };

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { GreenButton } from '../../../button';
 import styles from './greeting.module.css';
 
@@ -19,7 +20,9 @@ export const Greeting = () => {
 					новое любимое место, где вы можете делиться информацией, задавать
 					вопросы и находить услуги для ваших любимых питомцев.
 				</p>
-				<GreenButton to="/services">Найти услугу</GreenButton>
+				<GreenButton>
+					<Link to="/services">Найти услугу</Link>
+				</GreenButton>
 			</div>
 			<div className={styles['welcome-image']}>
 				<img

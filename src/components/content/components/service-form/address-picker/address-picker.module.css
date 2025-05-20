@@ -1,0 +1,30 @@
+.select-addresss {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 15px;
+}
+
+.select-addresss input {
+	width: 50%;
+}
+
+.button-container {
+	display: flex;
+	gap: 10px;
+	justify-content: start;
+	margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+	.select-addresss {
+		flex-direction: column;
+		gap: 0px;
+		align-items: start;
+		padding-bottom: 5px;
+	}
+
+	.select-addresss input {
+		width: 100%;
+	}
+}

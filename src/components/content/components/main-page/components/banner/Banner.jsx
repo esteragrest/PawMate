@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { GreenButton } from '../../../button';
 import styles from './banner.module.css';
 
@@ -20,7 +21,9 @@ export const Banner = () => {
 					ярче и счастливее!
 				</p>
 
-				<GreenButton to="/auth/register">Присоединиться</GreenButton>
+				<GreenButton to="/auth/register">
+					<Link to="/auth/register">Присоединиться</Link>
+				</GreenButton>
 			</div>
 		</div>
 	);

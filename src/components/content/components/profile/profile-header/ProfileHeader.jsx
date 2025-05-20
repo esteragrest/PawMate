@@ -1,6 +1,7 @@
 import { ControlButton, GreenButton } from '../../button';
 import PropTypes from 'prop-types';
 import styles from './profile-header.module.css';
+import { Link } from 'react-router-dom';
 
 export const ProfileHeader = ({
 	userData: { photo, firstName, lastName, email, phone, address },
@@ -20,9 +21,15 @@ export const ProfileHeader = ({
 				<p>{phone}</p>
 				<p>{address}</p>
 				<div className={styles['control-panel']}>
-					<GreenButton to={'/newpet'}>Добавить питомца</GreenButton>
-					<GreenButton to="/newservice">Предложить услугу</GreenButton>
-					<GreenButton to="/forum">Задать вопрос</GreenButton>
+					<GreenButton>
+						<Link to={'/newpet'}>Добавить питомца</Link>
+					</GreenButton>
+					<GreenButton>
+						<Link to="/newservice">Предложить </Link>
+					</GreenButton>
+					<GreenButton>
+						<Link to="/forum">Задать вопрос</Link>
+					</GreenButton>
 				</div>
 			</div>
 		</div>
