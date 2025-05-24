@@ -7,3 +7,4 @@ export * from './set-user';
 export * from './logout';
 export * from './save-service-async';
 export * from './update-user-async';
+export * from './save-pet-async';

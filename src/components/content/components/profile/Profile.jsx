@@ -33,7 +33,7 @@ export const Profile = () => {
 			setUserData(data);
 			setUserPets(data.pets);
 			setUserServices(data.services);
-			setUserForumPosts(data.posts);
+			setUserForumPosts(data.forumPosts);
 		});
 	}, [navigate, isAuth, userId]);
 

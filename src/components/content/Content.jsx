@@ -37,7 +37,7 @@ export const Content = () => {
 			</Route>
 			<Route path="/editprofile" element={<ProfileEdit />} />
 			<Route path="/newpet" element={<PetForm />} />
-			<Route path="/editpet" element={<PetForm />} />
+			<Route path="/editpet/:petId" element={<PetForm />} />
 			<Route path="*" element={<div>Ошибка 404</div>} />
 		</Routes>
 	);
