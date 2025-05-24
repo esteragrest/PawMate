@@ -5,3 +5,5 @@ export * from './set-service-data';
 export * from './reset-service-data';
 export * from './set-user';
 export * from './logout';
+export * from './save-service-async';
+export * from './update-user-async';

@@ -1,16 +1,22 @@
 export const request = async (url, method, data) => {
 	const isFormData = data instanceof FormData;
-
 	const baseHeaders = isFormData ? {} : { 'Content-Type': 'application/json' };
 
-	const token = sessionStorage.getItem('token');
+	let token;
+	const storedUserData = sessionStorage.getItem('userData');
+	if (storedUserData) {
+		try {
+			const userData = JSON.parse(storedUserData);
+			token = userData.token;
+		} catch (e) {
+			console.error('Ошибка парсинга userData:', e);
+		}
+	}
 
 	const headers = token
 		? { ...baseHeaders, Authorization: `Bearer ${token}` }
 		: baseHeaders;
 
-	console.log(data);
-	console.log(headers);
 	return await fetch(url, {
 		headers,
 		method: method || 'GET',

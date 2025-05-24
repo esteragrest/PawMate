@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import styles from './profile-menu.module.css';
 import { useSelector } from 'react-redux';
 import { isAuthorized } from '../../../../utils';
-import { selectUserRolle } from '../../../../selectors';
+import { selectUserRole } from '../../../../selectors';
 import { ControlButton } from '../../../content/components/button';
 import { useLogout } from '../../../../hooks';
 
 export const ProfileMenu = ({ toggleMenu }) => {
-	const userRole = useSelector(selectUserRolle);
+	const userRole = useSelector(selectUserRole);
 	const onLogout = useLogout();
 
 	const isAuth = isAuthorized(userRole);
