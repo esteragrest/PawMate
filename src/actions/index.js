@@ -4,3 +4,4 @@ export * from './reset-forum-post-data';
 export * from './set-service-data';
 export * from './reset-service-data';
 export * from './set-user';
+export * from './logout';

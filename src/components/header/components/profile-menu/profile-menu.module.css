@@ -1,6 +1,8 @@
 .profile-menu {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	gap: 10px;
 }
 
@@ -19,6 +21,27 @@
 	}
 }
 
+.user-menu-container {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.avatar {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	border-radius: 50%;
+}
+
+.avatar img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
 .burgerMenu {
 	display: none;
 	cursor: pointer;
@@ -35,12 +58,26 @@
 	.login {
 		font-size: 20px;
 	}
+
+	.avatar {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.login {
 		padding: 5px 14px;
 		gap: 7px;
+	}
+
+	.user-menu-container {
+		gap: 10px;
+	}
+
+	.avatar {
+		width: 35px;
+		height: 35px;
 	}
 }
 
@@ -53,6 +90,15 @@
 	.burgerMenu {
 		display: block;
 	}
+
+	.user-menu-container {
+		gap: 5px;
+	}
+
+	.avatar {
+		width: 32px;
+		height: 32px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -64,6 +110,15 @@
 
 	.login img {
 		width: 10px;
+	}
+
+	.user-menu-container {
+		gap: 5px;
+	}
+
+	.avatar {
+		width: 30px;
+		height: 30px;
 	}
 
 	.burgerMenu {

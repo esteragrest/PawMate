@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './contorl-button.module.css';
 
-export const ControlButton = ({ img, ...props }) => {
+export const ControlButton = ({ children, ...props }) => {
 	return (
-		<Link className={styles['control-button-container']} {...props}>
-			<img className={styles['control-button']} src={img} alt="control-button" />
-		</Link>
+		<button className={styles['control-button-container']} {...props}>
+			{children}
+		</button>
 	);
 };
 
 ControlButton.propTypes = {
-	img: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
 };
