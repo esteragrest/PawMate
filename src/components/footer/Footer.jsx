@@ -12,7 +12,7 @@ export const Footer = () => {
 				<img src="/src/assets/images/paw-icon.png" alt="paw-icon" />
 			</div>
 			<div className={styles.contact}>
-				<p>petmateoff@gmail.com</p>
+				<p>pawmateoff@gmail.com</p>
 				<p>+375333333333</p>
 			</div>
 		</footer>

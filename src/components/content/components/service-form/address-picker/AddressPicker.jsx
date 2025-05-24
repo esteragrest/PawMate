@@ -12,6 +12,21 @@ export const AddressPicker = ({ showModal, setShowModal, setMainAddress }) => {
 	const [markerPosition, setMarkerPosition] = useState([55.751244, 37.618423]);
 	const [mapCenter, setMapCenter] = useState([55.751244, 37.618423]);
 
+	useEffect(() => {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(
+				(position) => {
+					const { latitude, longitude } = position.coords;
+					setMarkerPosition([latitude, longitude]);
+					setMapCenter([latitude, longitude]);
+				},
+				(error) => {
+					console.error('Ошибка получения геолокации:', error);
+				},
+			);
+		}
+	}, []);
+
 	const fetchAddressByCoords = async (lat, lon) => {
 		try {
 			const response = await fetch(

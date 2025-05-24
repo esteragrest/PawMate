@@ -4,7 +4,7 @@ import styles from './profile-header.module.css';
 import { Link } from 'react-router-dom';
 
 export const ProfileHeader = ({
-	userData: { photo, firstName, lastName, email, phone, address },
+	userData: { photo, firstName, lastName, email, phone },
 }) => {
 	return (
 		<div className={styles['profile-header']}>
@@ -19,7 +19,6 @@ export const ProfileHeader = ({
 				</h3>
 				<p>{email}</p>
 				<p>{phone}</p>
-				<p>{address}</p>
 				<div className={styles['control-panel']}>
 					<GreenButton>
 						<Link to={'/newpet'}>Добавить питомца</Link>
