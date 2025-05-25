@@ -4,7 +4,7 @@ export const SERVICES = [
 		title: 'Стрижка',
 		description:
 			'Профессиональный уход за шерстью питомца с учетом его породы и типа волос. Используем качественные инструменты и безопасные средства для стрижки. Гарантируем комфортное и бережное обращение с животным.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/62/42/f6/6242f620a600d52dd5c9c15e79e14f4b.jpg',
 		serviceOwnerFirstName: 'Алексей',
 		serviceOwnerLastName: 'Морозов',
 		serviceOwnerPhoto: '/img/users/alexey.jpg',
@@ -17,10 +17,11 @@ export const SERVICES = [
 		title: 'Груминг',
 		description:
 			'Комплексный уход за питомцем, включая стрижку, купание, чистку ушей и уход за когтями. Все процедуры проводятся в комфортных условиях, с использованием гипоаллергенных средств и специализированного оборудования.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/67/d2/3c/67d23c3b0b41634e10921496ca99e04e.jpg',
 		serviceOwnerFirstName: 'Елена',
 		serviceOwnerLastName: 'Кузнецова',
-		serviceOwnerPhoto: '/img/users/elena.jpg',
+		serviceOwnerPhoto:
+			'https://i.pinimg.com/736x/67/dd/0a/67dd0a80baf1bdb16bb38a1fb1d5d16e.jpg',
 		address: 'г. Санкт-Петербург, пр. Невский, 45',
 		price: '2500 руб.',
 		userEmail: 'elena.kuznetsova@example.com',
@@ -30,10 +31,11 @@ export const SERVICES = [
 		title: 'Купание',
 		description:
 			'Щадящее купание с использованием специальных шампуней, подобранных под тип кожи и шерсти питомца. Включает массаж, сушку и укладку шерсти. Вода комфортной температуры, без стресса для животного.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/6e/bd/38/6ebd384e1c30114a7a41214b826af8bd.jpg',
 		serviceOwnerFirstName: 'Михаил',
 		serviceOwnerLastName: 'Сидоров',
-		serviceOwnerPhoto: '/img/users/mikhail.jpg',
+		serviceOwnerPhoto:
+			'https://i.pinimg.com/736x/67/dd/0a/67dd0a80baf1bdb16bb38a1fb1d5d16e.jpg',
 		address: 'г. Казань, ул. Пушкина, 10',
 		price: '1800 руб.',
 		userEmail: 'mikhail.sidorov@example.com',
@@ -43,7 +45,7 @@ export const SERVICES = [
 		title: 'Стрижка когтей',
 		description:
 			'Безопасное и безболезненное подстригание когтей, учитывающее анатомию лап питомца. Используем специальные ножницы и пилки, чтобы предотвратить расслоение когтей и дискомфорт при ходьбе.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/3b/cc/3b/3bcc3b7ad4ba598cded06c7e545acdc9.jpg',
 		serviceOwnerFirstName: 'Сергей',
 		serviceOwnerLastName: 'Волков',
 		serviceOwnerPhoto: '/img/users/sergey.jpg',
@@ -56,7 +58,7 @@ export const SERVICES = [
 		title: 'Чистка ушей',
 		description:
 			'Деликатное очищение ушей питомца от серы и загрязнений, предотвращающее воспалительные процессы. Используем специальные лосьоны и стерильные инструменты для максимальной безопасности.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/23/5a/7c/235a7cd39f4eba9c6e4b05ec7b59f370.jpg',
 		serviceOwnerFirstName: 'Мария',
 		serviceOwnerLastName: 'Белоусова',
 		serviceOwnerPhoto: '/img/users/maria.jpg',
@@ -69,7 +71,7 @@ export const SERVICES = [
 		title: 'Консультация ветеринара',
 		description:
 			'Квалифицированная консультация по вопросам здоровья и ухода за питомцем. Врач проводит осмотр, даёт рекомендации по питанию, профилактике заболеваний и вакцинации.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/b8/ef/60/b8ef6097d45031f605378d80dc0c40af.jpg',
 		serviceOwnerFirstName: 'Иван',
 		serviceOwnerLastName: 'Петров',
 		serviceOwnerPhoto: '/img/users/ivan.jpg',
@@ -82,7 +84,7 @@ export const SERVICES = [
 		title: 'Консультация кинолога',
 		description:
 			'Индивидуальная консультация с профессиональным кинологом, который поможет скорректировать поведение питомца, даст рекомендации по воспитанию и тренировкам. Учитываются особенности породы и характер животного.',
-		photo: 'https://i.pinimg.com/736x/ca/c7/55/cac7556c64ddafb3bec61f4585800c2b.jpg',
+		photo: 'https://i.pinimg.com/736x/0d/2b/77/0d2b77bfec43127e7a66e8a605cc7c62.jpg',
 		serviceOwnerFirstName: 'Анастасия',
 		serviceOwnerLastName: 'Фролова',
 		serviceOwnerPhoto: '/img/users/anastasia.jpg',

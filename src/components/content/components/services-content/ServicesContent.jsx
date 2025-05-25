@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ServicesList } from '../../../services-list/ServicesList';
-import { SERVICES } from './services-data';
 import styles from './services-content.module.css';
 import { useMatch } from 'react-router-dom';
 import { Service } from './service/Service';
+import { request } from '../../../../utils';
 
 export const ServicesContent = () => {
 	const [services, setServices] = useState([]);
@@ -11,7 +11,14 @@ export const ServicesContent = () => {
 
 	useEffect(() => {
 		if (isAllServices) {
-			setServices(SERVICES);
+			request('/api/services').then((services) => {
+				if(services.error) {
+					setServices([])
+					return
+				}
+
+				setServices(services)
+			})
 		}
 	}, [isAllServices]);
 

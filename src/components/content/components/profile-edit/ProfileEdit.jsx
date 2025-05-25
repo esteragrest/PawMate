@@ -13,7 +13,22 @@ import { updateUserAsync } from '../../../../actions';
 import { selectUserId } from '../../../../selectors';
 
 const schema = yup.object().shape({
-	photo: yup.mixed(),
+	photo: yup
+		.mixed()
+		.required('Фото обязательно')
+		.test(
+			'isValidFileOrUrl',
+			'Файл должен быть изображением (jpg, jpeg, png) или ссылкой',
+			(value) => {
+				if (!value) return false;
+
+				if (typeof value === 'string') {
+					return value.startsWith('http://') || value.startsWith('https://');
+				}
+
+				return ['image/jpeg', 'image/jpg', 'image/png'].includes(value.type);
+			},
+		),
 	first_name: yup.string().trim(),
 	surname: yup.string().trim(),
 	last_name: yup.string().trim(),

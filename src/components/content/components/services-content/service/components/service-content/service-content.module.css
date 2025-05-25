@@ -8,6 +8,13 @@
 	gap: 15px;
 }
 
+.control-panel {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
 .service-header {
 	display: flex;
 	width: 100%;

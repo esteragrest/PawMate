@@ -1,9 +1,9 @@
-import { useMatch, useNavigate } from 'react-router-dom';
+import { useLocation, useMatch, useNavigate } from 'react-router-dom';
 import { FileInput } from '../../../file-input/FileInput';
 import { Form } from '../../../form/Form';
 import { Input } from '../../../input/Input';
 import { GreenButton } from '../button';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { AddressPicker } from './address-picker/AddressPicker';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -12,7 +12,7 @@ import styles from './service-form.module.css';
 import { ErrorMessage } from '../../../error-message/ErrorMessage';
 import { isAuthorized } from '../../../../utils';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectService, selectUserId, selectUserRole } from '../../../../selectors';
+import { selectUserId, selectUserRole } from '../../../../selectors';
 import { saveServiceAsync } from '../../../../actions';
 
 const schema = yup.object().shape({
@@ -44,12 +44,14 @@ const schema = yup.object().shape({
 });
 
 export const ServiceForm = () => {
+	const location = useLocation();
+	const { id, title, description, photo, address, price, userEmail } =
+		location.state || {};
 	const [showModal, setShowModal] = useState(false);
 	const [serverError, setServerError] = useState('');
-	const isEditing = !!useMatch('/editservice');
+	const isEditing = !!useMatch('/editservice/:serviceId');
 	const userRole = useSelector(selectUserRole);
 	const userId = useSelector(selectUserId);
-	const service = useSelector(selectService);
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 
@@ -60,30 +62,37 @@ export const ServiceForm = () => {
 		setValue,
 	} = useForm({
 		resolver: yupResolver(schema),
+		defaultValues: {
+			photo: photo || '',
+			title: title || '',
+			description: description || '',
+			address: address || '',
+			price: price || '',
+			user_email: userEmail || '',
+		},
 	});
 
 	const isAuth = isAuthorized(userRole);
 
-	useEffect(() => {
-		if (isEditing && service) {
-			setValue('title', service.title);
-			setValue('description', service.description);
-			setValue('price', service.price);
-			setValue('user_email', service.userEmail);
-			setValue('address', service.address);
-		}
-	}, [isEditing, service, setValue]);
-
 	const onSubmit = (serviceFormData) => {
-		const serverUrl = isEditing ? `/api/services/${service.id}` : '/api/services';
+		const serverUrl = isEditing ? `/api/services/${id}` : '/api/services';
 		const method = isEditing ? 'PUT' : 'POST';
 
-		dispatch(
-			saveServiceAsync({ ...serviceFormData, user_id: userId }, serverUrl, method),
-		).then((data) => {
-			if (data) {
+		const requestData = { ...serviceFormData };
+
+		if (!isEditing) {
+			requestData.user_id = userId;
+		}
+
+		console.log(requestData);
+
+		dispatch(saveServiceAsync(requestData, serverUrl, method)).then((data) => {
+			if (!isEditing && data) {
 				navigate(`/services/${data}`);
+				return;
 			}
+
+			navigate(-1);
 		});
 	};
 
@@ -91,6 +100,8 @@ export const ServiceForm = () => {
 		navigate('/auth/login');
 		return;
 	}
+
+	console.log(isEditing);
 
 	return (
 		<div className={styles['create-service-container']}>
@@ -105,7 +116,7 @@ export const ServiceForm = () => {
 					<FileInput
 						register={register}
 						setValue={setValue}
-						defaultImage={isEditing ? service.photo : null}
+						defaultImage={photo}
 					/>
 					<Input
 						type="text"

@@ -133,7 +133,11 @@ export const PetForm = () => {
 						placeholder="Введите имя вашего питомца"
 						{...register('name')}
 					/>
-					{errors.name && <p className={styles.error}>{errors.name.message}</p>}
+					{errors.name && (
+						<ErrorMessage className={styles.error}>
+							{errors.name.message}
+						</ErrorMessage>
+					)}
 					<Input
 						type="text"
 						placeholder="Введите тип вашего питомца"

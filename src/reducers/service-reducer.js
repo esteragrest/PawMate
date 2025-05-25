@@ -6,7 +6,7 @@ const initialServiceState = {
 	description: '',
 	photo: '',
 	serviceOwnerFirstName: '',
-	//добавить id владельца
+	userId: '',
 	serviceOwnerLastName: '',
 	serviceOwnerPhoto: '',
 	address: '',

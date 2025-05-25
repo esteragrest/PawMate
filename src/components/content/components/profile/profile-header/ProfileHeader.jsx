@@ -13,7 +13,7 @@ export const ProfileHeader = ({ userData }) => {
 		return <div className={styles['profile-header']}>Нет данных о пользователе</div>;
 	}
 
-	const { id, photo, firstName, lastName, phone } = userData;
+	const { id, photo, firstName, lastName, surname, phone } = userData;
 
 	const onEdit = () => {
 		navigate('/editprofile', {
@@ -22,6 +22,7 @@ export const ProfileHeader = ({ userData }) => {
 				photo,
 				firstName,
 				lastName,
+				surname,
 				phone,
 			},
 		});
@@ -71,6 +72,7 @@ ProfileHeader.propTypes = {
 		photo: PropTypes.string,
 		firstName: PropTypes.string,
 		lastName: PropTypes.string,
+		surname: PropTypes.string,
 		email: PropTypes.string,
 		phone: PropTypes.string,
 	}),
